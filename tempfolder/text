@@ -1,0 +1,34 @@
+to tar:
+tar -cvzf jet.tar.gz JetbrainsToolDemo
+
+
+
+
+
+sudo wget -O /home/ramakant/Desktop/softwares/MPS-3.2.3.tar.gz http://download.jetbrains.com/mps/32/MPS-3.2.3.tar.gz
+sudo chown -R ramakant /home/ramakant/Desktop/softwares
+cd /home/ramakant/Desktop/softwares
+tar -zxvf MPS-3.2.3.tar.gz
+sudo rm -f "/home/ramakant/Desktop/softwares/MPS-3.2.3.tar.gz"
+
+
+sudo wget -O /home/ramakant/Desktop/softwares/com.mbeddr.allInOne.zip https://github.com/mbeddr/mbeddr.core/releases/download/1.0-RC1/com.mbeddr.allInOne.zip
+sudo chown -R ramakant /home/ramakant/Desktop/softwares/com.mbeddr.allInOne.zip
+unzip com.mbeddr.allInOne.zip
+sudo rm -f "/home/ramakant/Desktop/softwares/com.mbeddr.allInOne.zip"
+
+cp -r /home/ramakant/Desktop/softwares/plugins/ /home/ramakant/Desktop/softwares/temp
+
+mkdir /home/ramakant/MPSProjects
+sudo wget -O /home/ramakant/MPSProjects/demo.tar.gz https://github.com/ramakantmoka/JetBrainsMPS/blob/master/demo.tar.gz
+cd /home/ramakant/MPSProjects
+sudo chown -R /home/ramakant/MPSProjects/demo.tar.gz
+tar -zxvf demo.tar.gz
+
+
+sudo wget -O /home/ramakant/MPSProjects/JetbrainsToolDemo.zip https://github.com/ramakantmoka/JetBrainsMPS/blob/master/JetbrainsToolDemo.zip
+sudo chown -R ramakant /home/ramakant/MPSProjects/JetbrainsToolDemo.zip
+
+sudo wget -O /home/ramakant/Weeby.zip https://github.com/ramakantmoka/JetBrainsMPS/blob/master/Weeby.zip
+
+sudo wget -O /home/ramakant/Desktop/ToolDemo.tar.gz https://github.com/ramakantmoka/JetBrainsMPS/blob/master/ToolDemo.tar.gz
